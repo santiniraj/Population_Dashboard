@@ -19,32 +19,53 @@ st.markdown("""
     padding-bottom: 0rem;
     margin-bottom: -7rem;
 }
+
 [data-testid="stVerticalBlock"] {
     padding-left: 0rem;
     padding-right: 0rem;
 }
+
 [data-testid="stMetric"] {
     background-color: #393939;
     text-align: center;
     padding: 15px 0;
+    border-radius: 10px;
 }
+
+/* Metric label */
 [data-testid="stMetricLabel"] {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    font-weight: bold;
 }
+
+/* Metric value */
+[data-testid="stMetricValue"] {
+    color: #FFFFFF !important;
+}
+
+/* Metric delta */
+[data-testid="stMetricDelta"] {
+    color: #00FF7F !important;
+    justify-content: center;
+}
+
+/* Down delta color */
+[data-testid="stMetricDelta"] svg {
+    color: red !important;
+}
+
 [data-testid="stMetricDeltaIcon-Up"] {
     position: relative;
     left: 38%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
 [data-testid="stMetricDeltaIcon-Down"] {
     position: relative;
     left: 38%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 </style>
